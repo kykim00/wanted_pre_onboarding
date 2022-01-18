@@ -3,9 +3,9 @@ import styled from "styled-components";
 const slide = [
   {
     id: 1,
-    image: "./images/carousel9.jpg",
-    title: "2022년 달라지는 노동법령",
-    content: "노무관리 쟁점 한 눈에 파악하기",
+    image: "./images/carousel8.jpg",
+    title: "개발자 되고싶은 분들!?",
+    content: "프론트엔드 무료 교육과정 참여하기",
   },
   {
     id: 2,

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Card } from "./Card";
 import styled from "styled-components";
 
-const TOTAL_CARDS = 11;
+const TOTAL_CARDS = 9;
 
 function createLeft() {
   return { __html: "<" };
@@ -11,7 +11,7 @@ function createRight() {
   return { __html: ">" };
 }
 export const Carousel = () => {
-  const [currentCard, setCurrentCard] = useState(1);
+  const [currentCard, setCurrentCard] = useState(2);
   const [mouseDown, setMouseDown] = useState(false);
   const [isMoved, setIsMoved] = useState(false);
   const cardRef = useRef(1);
@@ -31,7 +31,7 @@ export const Carousel = () => {
   };
   const prevCard = () => {
     if (currentCard === 1) {
-      setCurrentCard(TOTAL_CARDS);
+      setCurrentCard(TOTAL_CARDS - 1);
     } else {
       setCurrentCard(currentCard - 1);
     }
