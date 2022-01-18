@@ -44,7 +44,9 @@ const FlexBox = styled.div`
     align-items: center;
     margin-right: 5px;
   }
-  button:nth-child(3) {
-    display: none;
+  @media (max-width: 992px) {
+    button:nth-child(3) {
+      display: none;
+    }
   }
 `;
